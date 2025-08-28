@@ -263,32 +263,9 @@ export class AiSearchApi implements INodeType {
 
 				// Build friendly message
 				let message = getErrorMessage(error);
-				const status = error?.response?.statusCode as number | undefined;
-
-				if (status) {
-					switch (status) {
-						case 401:
-							message = 'Unauthorized: Please check your API key';
-							break;
-						case 429:
-							message = 'Too many requests: Please slow down your request rate';
-							break;
-						case 433:
-							message = 'Account is at or over message quota: Please check your usage limits';
-							break;
-						case 500:
-							message = 'Server error: Please try again later';
-							break;
-						case 503:
-							message = 'Service unavailable: The API is temporarily down';
-							break;
-					}
-				}
-
-				// NOTE: `details` is not a valid option; use only supported fields
 				throw new NodeOperationError(this.getNode(), message, {
 					itemIndex: i,
-					description: `HTTP ${status ?? 'Error'}`,
+					description: `HTTP Error`,
 				});
 			}
 		}

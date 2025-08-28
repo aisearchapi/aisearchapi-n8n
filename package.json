@@ -1,6 +1,5 @@
 {
   "name": "@aisearchapi/n8n-nodes-aisearchapi",
-  "type": "module",
   "version": "1.0.0",
   "description": "n8n node for AI Search API - intelligent search with context awareness",
   "keywords": [
@@ -36,13 +35,15 @@
     "LICENSE"
   ],
   "n8n": {
-    "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/AiSearchApi.credentials.js"
-    ],
     "nodes": [
       "dist/nodes/AiSearchApi/AiSearchApi.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/AiSearchApi.credentials.js"
     ]
+  },
+  "dependencies": {
+    "n8n-workflow": "1.108.2"
   },
   "devDependencies": {
     "@types/node": "^20.8.0",
