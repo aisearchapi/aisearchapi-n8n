@@ -1,13 +1,63 @@
 {
-  "name": "aisearchapi-n8n",
+  "name": "@aisearchapi/n8n-nodes-aisearchapi",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "n8n node for AI Search API - intelligent search with context awareness",
+  "keywords": [
+    "n8n",
+    "n8n-node",
+    "n8n-community-node-package",
+    "ai",
+    "search",
+    "aisearchapi",
+    "llm",
+    "embeddings",
+    "semantic-search"
+  ],
+  "author": {
+    "name": "AI Search API",
+    "email": "admin@aisearchapi.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aisearchapi/n8n-nodes-aisearchapi"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/AiSearchApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/AiSearchApi/AiSearchApi.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "n8n-workflow": "^1.0.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "license": "MIT",
+  "homepage": "https://aisearchapi.io",
+  "bugs": {
+    "url": "https://github.com/aisearchapi/n8n-nodes-aisearchapi/issues"
+  }
 }
