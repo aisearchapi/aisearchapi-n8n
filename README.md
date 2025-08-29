@@ -32,7 +32,7 @@ Bring **semantic search**, **context awareness**, and **balance monitoring** dir
 From npm (recommended):
 
 ```bash
-npm install aisearchapi-n8n
+npm install n8n-nodes-aisearchapi
 ```
 
 From source:
@@ -131,7 +131,7 @@ dist/nodes/AiSearchApi/AiSearchApi.node.js
 **Package hints** (important parts of `package.json`):  
 ```json
 {
-  "name": "aisearchapi-n8n",
+  "name": "n8n-nodes-aisearchapi",
   "version": "0.1.0",
   "main": "dist/index.js",
   "files": ["dist", "README.md", "LICENSE"],
@@ -230,7 +230,7 @@ dist/nodes/AiSearchApi/AiSearchApi.node.js
 ## 🎉 Start Now
 
 ```bash
-npm install aisearchapi-n8n
+npm install n8n-nodes-aisearchapi
 ```
 
 Connect your API key in n8n and build **AI-powered workflows** in minutes.
