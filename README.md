@@ -3,7 +3,7 @@
 **Custom [n8n](https://n8n.io) node** to integrate the [AI Search API](https://aisearchapi.io) into your automation workflows.  
 Bring **semantic search**, **context awareness**, and **balance monitoring** directly into your n8n pipelines.
 
-[![npm version](https://img.shields.io/npm/v/aisearchapi-n8n.svg)](https://www.npmjs.com/package/aisearchapi-n8n)
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-aisearchapi.svg)](https://www.npmjs.com/package/n8n-nodes-aisearchapi)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-brightgreen.svg)](https://nodejs.org/)
 
@@ -223,7 +223,7 @@ dist/nodes/AiSearchApi/AiSearchApi.node.js
 - [📊 Dashboard](https://aisearchapi.io/dashboard)  
 - [📘 Documentation](https://docs.aisearchapi.io)  
 - [🐙 GitHub Issues](https://github.com/aisearchapi/aisearchapi-n8n/issues)  
-- [📦 npm Package](https://www.npmjs.com/package/aisearchapi-n8n)
+- [📦 npm Package](https://www.npmjs.com/package/n8n-nodes-aisearchapi)
 
 ---
 
