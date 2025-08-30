@@ -1,17 +1,27 @@
 {
   "name": "n8n-nodes-aisearchapi",
-  "version": "1.0.1",
-  "description": "n8n node for AI Search API - intelligent search with context awareness",
+  "version": "1.0.2",
+  "description": "n8n node for AI Search API \u2014 semantic search, web search, summarization, and context-aware answers with balance monitoring.",
   "keywords": [
     "n8n",
     "n8n-node",
     "n8n-community-node-package",
+    "n8n-extension",
+    "automation",
+    "workflow",
     "ai",
-    "search",
-    "aisearchapi",
     "llm",
-    "embeddings",
-    "semantic-search"
+    "ai search api",
+    "aisearchapi",
+    "search",
+    "search api",
+    "web search api",
+    "summary api",
+    "summarization api",
+    "semantic-search",
+    "semantic search",
+    "context awareness",
+    "contextual ai"
   ],
   "author": {
     "name": "AI Search API",
@@ -21,13 +31,15 @@
     "type": "git",
     "url": "https://github.com/aisearchapi/aisearchapi-n8n"
   },
+  "homepage": "https://aisearchapi.io",
+  "bugs": {
+    "url": "https://github.com/aisearchapi/aisearchapi-n8n/issues"
+  },
+  "license": "MIT",
   "main": "index.js",
-  "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.json && npm run copy:assets",
-    "copy:assets": "shx mkdir -p dist/nodes/AiSearchApi dist/credentials && shx cp nodes/AiSearchApi/aisearchapi.svg dist/nodes/AiSearchApi/ && shx cp credentials/aisearchapi.svg dist/credentials",
-    "dev": "tsc --watch",
-    "lint": "eslint nodes credentials --ext .ts",
-    "lintfix": "eslint nodes credentials --ext .ts --fix"
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
   },
   "files": [
     "dist",
@@ -43,7 +55,17 @@
       "dist/credentials/AiSearchApi.credentials.js"
     ]
   },
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json && npm run copy:assets",
+    "copy:assets": "shx mkdir -p dist/nodes/AiSearchApi dist/credentials && shx cp nodes/AiSearchApi/aisearchapi.svg dist/nodes/AiSearchApi/ && shx cp credentials/aisearchapi.svg dist/credentials",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix"
+  },
   "dependencies": {
+    "n8n-workflow": "*"
+  },
+  "peerDependencies": {
     "n8n-workflow": "*"
   },
   "devDependencies": {
@@ -56,12 +78,8 @@
     "shx": "^0.4.0",
     "typescript": "^5.2.2"
   },
-  "peerDependencies": {
-    "n8n-workflow": "*"
+  "publishConfig": {
+    "access": "public"
   },
-  "license": "MIT",
-  "homepage": "https://aisearchapi.io",
-  "bugs": {
-    "url": "https://github.com/aisearchapi/aisearchapi-n8n/issues"
-  }
+  "sideEffects": false
 }
