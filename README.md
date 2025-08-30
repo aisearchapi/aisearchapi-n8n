@@ -157,6 +157,7 @@ You should see:
 - [📘 Documentation](https://docs.aisearchapi.io)  
 - [🐙 GitHub Issues](https://github.com/aisearchapi/aisearchapi-n8n/issues)  
 - [📦 npm Package](https://www.npmjs.com/package/n8n-nodes-aisearchapi)  
+- [Blog](https://aisearchapi.io/blog)
 
 ---
 
