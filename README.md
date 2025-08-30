@@ -1,7 +1,7 @@
 # 🤖 AI Search API n8n Node
 
 **Custom [n8n](https://n8n.io) node** to integrate the [AI Search API](https://aisearchapi.io) into your automation workflows.  
-Bring **semantic search**, **context awareness**, and **balance monitoring** directly into your n8n pipelines.
+Bring **semantic search**, **context awareness**, **summarization**, and **balance monitoring** directly into your n8n pipelines.
 
 [![npm version](https://img.shields.io/npm/v/n8n-nodes-aisearchapi.svg)](https://www.npmjs.com/package/n8n-nodes-aisearchapi)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-blue.svg)](https://www.typescriptlang.org/)
@@ -11,9 +11,10 @@ Bring **semantic search**, **context awareness**, and **balance monitoring** dir
 
 ## ✨ Features
 
-- 🔍 **Semantic Search** – Natural language search with embeddings  
+- 🔍 **Semantic Search (AI Search API)** – Natural language search with embeddings  
+- 🌐 **Web Search API** – Search across the web with intelligent filtering  
+- 📝 **Summarization API / Summary API** – Condense long text into clear summaries  
 - 💬 **Context Management** – Add previous messages for richer answers  
-- 📝 **Flexible Responses** – Markdown or plain text output  
 - 📊 **Balance Monitoring** – Track credits and usage in real time  
 - ⚡ **TypeScript Support** – Strong typings and IDE hints  
 - 🧩 **Seamless n8n Integration** – Drag-and-drop node inside your n8n editor  
@@ -80,7 +81,7 @@ You should see:
 
 ## 📖 Usage
 
-### Search
+### Search API
 - Resource: **Search**  
 - Operation: **Search**  
 - Parameters:  
@@ -88,6 +89,22 @@ You should see:
   - `responseType` → `markdown | text`  
   - `context` → optional array of messages  
   - `timeout` → ms (default `30000`)  
+
+### Web Search API
+- Resource: **Web Search**  
+- Operation: **Search the web**  
+- Parameters:  
+  - `query` → keywords or question  
+  - `maxResults` → limit number of results  
+  - `filters` → optional filters  
+
+### Summarization API / Summary API
+- Resource: **Summarize**  
+- Operation: **Summarize Text**  
+- Parameters:  
+  - `text` → input text or content  
+  - `ratio` → compression ratio (0–1)  
+  - `length` → target length of summary  
 
 ### Balance
 - Resource: **Account**  
@@ -104,23 +121,6 @@ You should see:
 | 433  | Quota Exceeded | Buy credits / upgrade |
 | 500  | Server Error | Try again later |
 | 503  | Service Unavailable | Temporary downtime |
-
----
-
-## 🔧 Development
-
-```bash
-git clone https://github.com/aisearchapi/aisearchapi-n8n.git
-cd aisearchapi-n8n
-npm install
-npm run build
-```
-
-You should see:
-```
-dist/credentials/AiSearchApi.credentials.js
-dist/nodes/AiSearchApi/AiSearchApi.node.js
-```
 
 ---
 
@@ -172,4 +172,4 @@ Connect your API key in n8n and build **AI-powered workflows** in minutes.
 
 ## 🔍 SEO Keywords
 
-AI Search API n8n node, semantic search automation, context-aware AI n8n, AI Search API workflow automation, AI Search API key integration, n8n extension AI Search API, AI search node for n8n, n8n semantic search plugin
+AI Search API n8n node, web search api, summary api, summarization api, search api, semantic search automation, context-aware AI n8n, AI Search API workflow automation, AI Search API key integration, n8n extension AI Search API, AI search node for n8n, n8n semantic search plugin
