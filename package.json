@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-aisearchapi",
-  "version": "1.0.2",
-  "description": "n8n node for AI Search API \u2014 semantic search, web search, summarization, and context-aware answers with balance monitoring.",
+  "version": "1.0.3",
+  "description": "n8n node for AI Search API — semantic search, web search, summarization, and context-aware answers with balance monitoring.",
   "keywords": [
     "n8n",
     "n8n-node",
