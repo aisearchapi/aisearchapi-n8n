@@ -1,6 +1,6 @@
 # 🤖 AI Search API n8n Node
 
-**Custom [n8n](https://n8n.io) node** to integrate the [AI Search API](https://aisearchapi.io?utm_source=npm) into your automation workflows.  
+**Custom [n8n](https://n8n.io) node** to integrate the [AI Search API](https://aisearchapi.io?utm_source=github) into your automation workflows.  
 Bring **semantic search**, **context awareness**, **summarization**, and **balance monitoring** directly into your n8n pipelines.
 
 [![npm version](https://img.shields.io/npm/v/n8n-nodes-aisearchapi.svg)](https://www.npmjs.com/package/n8n-nodes-aisearchapi)
@@ -24,9 +24,9 @@ Bring **semantic search**, **context awareness**, **summarization**, and **balan
 ## 🚀 Quick Start
 
 ### 1) Sign Up & Get Your API Key
-- [🆕 Create Account](https://aisearchapi.io/join?utm_source=npm)  
-- [🔑 Log In](https://aisearchapi.io/login?utm_source=npm)  
-- [📊 Dashboard](https://aisearchapi.io/dashboard?utm_source=npm) – manage your API key  
+- [🆕 Create Account](https://aisearchapi.io/join?utm_source=github)  
+- [🔑 Log In](https://aisearchapi.io/login?utm_source=github)  
+- [📊 Dashboard](https://aisearchapi.io/dashboard?utm_source=github) – manage your API key  
 
 ### 2) Install the Package
 
@@ -116,7 +116,7 @@ You should see:
 
 | Code | Meaning | Fix |
 |------|---------|-----|
-| 401  | Unauthorized | Invalid key → [Get key](https://aisearchapi.io/join?utm_source=npm) |
+| 401  | Unauthorized | Invalid key → [Get key](https://aisearchapi.io/join?utm_source=github) |
 | 429  | Too Many Requests | Slow down / add retry logic |
 | 433  | Quota Exceeded | Buy credits / upgrade |
 | 500  | Server Error | Try again later |
@@ -153,8 +153,8 @@ You should see:
 
 ## 📚 Resources
 
-- [🌐 AI Search API Homepage](https://aisearchapi.io?utm_source=npm)  
-- [📘 Documentation](https://docs.aisearchapi.io?utm_source=npm)  
+- [🌐 AI Search API Homepage](https://aisearchapi.io?utm_source=github)  
+- [📘 Documentation](https://docs.aisearchapi.io?utm_source=github)  
 - [🐙 GitHub Issues](https://github.com/aisearchapi/aisearchapi-n8n/issues)  
 - [📦 npm Package](https://www.npmjs.com/package/n8n-nodes-aisearchapi)  
 - [Blog](https://aisearchapi.io/blog/)  
